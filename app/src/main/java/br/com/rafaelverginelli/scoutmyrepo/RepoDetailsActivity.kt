@@ -57,6 +57,6 @@ class RepoDetailsActivity : CustomAppCompatActivity() {
 
         txtLastUpdate.text = updatedDate
         txtWatcherCount.text = repo.watchers.toString()
-        txtDescription.text = repo.description?: ""
+        txtDescription.text = repo.description?: getString(R.string.no_description)
     }
 }
